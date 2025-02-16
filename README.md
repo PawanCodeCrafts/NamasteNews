@@ -1,24 +1,7 @@
 # NamasteNews
- NamasteNews is a news app created using React and NewsApi
-<!-- Project Title -->
-<h1 align="center">📰 Namaste News</h1>
 
-<!-- Tagline -->
 <p align="center">A simple and modern news app built with React and NewsAPI.</p>
 
-<!-- Badges (Optional) -->
-<p align="center">
-  <img src="https://img.shields.io/github/license/your-username/namaste-news" alt="License">
-  <img src="https://img.shields.io/github/stars/your-username/namaste-news" alt="Stars">
-  <img src="https://img.shields.io/github/forks/your-username/namaste-news" alt="Forks">
-</p>
-
-<!-- Project Banner -->
-<p align="center">
-  <img src="https://via.placeholder.com/800x400?text=Namaste+News+Banner" alt="Namaste News Banner">
-</p>
-
----
 
 <!-- Table of Contents -->
 <h2>📌 Table of Contents</h2>
@@ -34,7 +17,7 @@
   <li><a href="#contact">Contact</a></li>
 </ul>
 
----
+
 
 <!-- About Section -->
 <h2 id="about">📖 About</h2>
@@ -42,7 +25,7 @@
   <strong>Namaste News</strong> is a lightweight and responsive news application built with <strong>React.js</strong>. It fetches real-time news from <strong>NewsAPI</strong> and displays the latest updates in different categories. The app has a clean UI, supports dark mode, and allows users to browse and search news articles effortlessly.
 </p>
 
----
+
 
 <!-- Features Section -->
 <h2 id="features">✨ Features</h2>
@@ -55,7 +38,7 @@
   <li>🔹 Fully responsive design using CSS</li>
 </ul>
 
----
+
 
 <!-- Tech Stack Section -->
 <h2 id="tech-stack">🛠️ Tech Stack</h2>
@@ -71,11 +54,11 @@
   </tr>
   <tr>
     <td><strong>Styling</strong></td>
-    <td>CSS (or Tailwind CSS / Bootstrap if used)</td>
+    <td>CSS / Bootstrap </td>
   </tr>
 </table>
 
----
+
 
 <!-- Installation Section -->
 <h2 id="installation">⚡ Installation</h2>
