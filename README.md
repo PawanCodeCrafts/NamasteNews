@@ -22,7 +22,7 @@
 <!-- About Section -->
 <h2 id="about">📖 About</h2>
 <p>
-  <strong>Namaste News</strong> is a lightweight and responsive news application built with <strong>React.js</strong>. It fetches real-time news from <strong>NewsAPI</strong> and displays the latest updates in different categories. The app has a clean UI, supports dark mode, and allows users to browse and search news articles effortlessly.
+  <strong>Namaste News</strong> is a lightweight and responsive news application built with <strong>React.js</strong>. It fetches real-time news from <strong>NewsAPI</strong> and displays the latest updates in different categories. The app has a clean UI and allows users to browse and search news articles effortlessly.
 </p>
 
 
@@ -33,9 +33,7 @@
 <ul>
   <li>🔹 Fetches real-time news using NewsAPI</li>
   <li>🔹 Categorized news (Technology, Sports, Business, Health, etc.)</li>
-  <li>🔹 Search functionality to find specific news articles</li>
-  <li>🔹 Dark Mode support for better readability</li>
-  <li>🔹 Fully responsive design using CSS</li>
+  <li>🔹 Fully responsive design using CSS and bootstrap</li>
 </ul>
 
 
@@ -65,7 +63,7 @@
 
 <p>Follow these steps to set up the project locally:</p>
 
-```bash
+//```bash
 # Clone the repository
 git clone https://github.com/your-username/namaste-news.git
 
