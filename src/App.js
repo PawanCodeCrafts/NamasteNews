@@ -6,12 +6,12 @@ import News from './components/News';
 class App extends React.Component {
   render() {
     return <>
-     <div> 
+      <div>
         <Navbar />
-        <News pageSize={5}/>
+        <News pageSize={10} />
       </div>;
     </>
-   
+
   }
 }
 

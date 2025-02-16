@@ -1,0 +1,26 @@
+:root {
+    --navbar-bg: #051254;
+    --navbar-text-color: white;
+    --button-bg:#051254;
+    --button-text-color:#ffffff;
+    --h1:#000000;
+  }
+
+.h1{
+    color: var(--h1);
+}
+#navbar_color{
+    background-color: var(--navbar-bg);
+    color: var(--navbar-text-color);
+}
+#navbar_logo{
+    font-size: 28px;
+}
+#navbar_links{
+    margin-top: 5px;
+    font-size: 22px;
+}
+.btn-color{
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+}

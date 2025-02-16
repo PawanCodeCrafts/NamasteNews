@@ -54,7 +54,7 @@ class News extends React.Component {
   render() {
     return (
       <div className="container my-4">
-        <h1 className="mb-4">NamasteNews - Latest News Updates</h1>
+        <h1 className="mb-4 h1">NamasteNews - Latest News Updates</h1>
         {this.state.loading && <Spinner />}
         <div className="row ">
           {!this.state.loading &&

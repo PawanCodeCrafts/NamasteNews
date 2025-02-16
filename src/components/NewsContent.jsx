@@ -22,7 +22,7 @@ class NewsContent extends React.Component {
               href={newsUrl}
               rel="noreferrer"
               target="_blank"
-              className="btn btn-sm btn-warning"
+              className="btn btn-sm btn-color"
             >
               Read more..
             </a>

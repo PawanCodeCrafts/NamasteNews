@@ -1,12 +1,15 @@
 import React from "react";
-
+import "../css/Style.css";
 export class Navbar extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav
+          id="navbar_color"
+          className="navbar navbar-expand-lg navbar-dark bg"
+        >
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">
+            <a id="navbar_logo" className="navbar-brand" href="/">
               NamasteNews
             </a>
             <button
@@ -24,15 +27,16 @@ export class Navbar extends React.Component {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
+              &nbsp;&nbsp;&nbsp;&nbsp;
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <a
+                    id="navbar_links"
+                    className="nav-link active"
+                    aria-current="page"
+                    href="/"
+                  >
                     Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="/about">
-                    About
                   </a>
                 </li>
               </ul>
