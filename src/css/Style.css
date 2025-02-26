@@ -1,6 +1,6 @@
 :root {
     --navbar-bg: #051254;
-    --navbar-text-color: white;
+    --navbar-text-color: #ffffff;
     --button-bg:#051254;
     --button-text-color:#ffffff;
     --h1:#000000;
@@ -17,8 +17,8 @@
     font-size: 28px;
 }
 #navbar_links{
-    margin-top: 5px;
-    font-size: 22px;
+    margin-top: 2px;
+    font-size: 20px;
 }
 .btn-color{
     background-color: var(--button-bg);
