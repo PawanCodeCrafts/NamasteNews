@@ -51,10 +51,10 @@ const News = (props) => {
   };
 
   return (
-    <div className="container my-4">
-      <h1 className="mb-4">
+    <div className="container my-4 pt-5">
+      <h2 className="mb-4">
         NamasteNews - {props.category.charAt(0).toUpperCase() + props.category.slice(1)} News
-      </h1>
+      </h2>
 
       {loading && <Spinner />}
 
