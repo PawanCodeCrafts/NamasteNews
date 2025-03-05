@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NamasteNews/static/css/main.79ae5529.css",
+    "main.js": "/NamasteNews/static/js/main.67cc02a3.js",
+    "static/js/453.b2157c12.chunk.js": "/NamasteNews/static/js/453.b2157c12.chunk.js",
+    "index.html": "/NamasteNews/index.html",
+    "main.79ae5529.css.map": "/NamasteNews/static/css/main.79ae5529.css.map",
+    "main.67cc02a3.js.map": "/NamasteNews/static/js/main.67cc02a3.js.map",
+    "453.b2157c12.chunk.js.map": "/NamasteNews/static/js/453.b2157c12.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79ae5529.css",
+    "static/js/main.67cc02a3.js"
+  ]
+}
