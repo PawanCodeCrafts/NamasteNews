@@ -8,23 +8,30 @@ const News = (props) => {
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
+  const [error, setError] = useState(null); //  Added state for error handling
 
   const fetchNews = async (page = 1) => {
-
     setLoading(true);
-    let url = `https://newsapi.org/v2/top-headlines?q=${props.country}&category=${props.category}&page=${page + 1}&pageSize=${props.pageSize}&apiKey=6f3c126f0c344a27818a9f668ef8b079`;
-    let response = await fetch(url);
-    let data = await response.json();
+    setError(null); // Reset error before fetching
 
-    if (data.status === "ok") {
-      setArticles(data.articles);
-      setTotalResults(data.totalResults);
-      setPage(page);
-      setLoading(false);
-    } else {
-      console.error("Error fetching news:", data);
-      setLoading(false);
+    let url = `https://newsapi.org/v2/top-headlines?q=${props.country}&category=${props.category}&page=${page}&pageSize=${props.pageSize}&apiKey=6f3c126f0c344a27818a9f668ef8b079`;
+
+    try {
+      let response = await fetch(url);
+      let data = await response.json();
+
+      if (data.status === "ok") {
+        setArticles(data.articles);
+        setTotalResults(data.totalResults);
+        setPage(page);
+      } else {
+        setError("⚠️ News fetching failed. NewsAPI free plan works only on localhost:3000.");
+      }
+    } catch (error) {
+      setError("⚠️ Unable to fetch news. Please check your internet connection.");
     }
+
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -48,9 +55,15 @@ const News = (props) => {
       <h1 className="mb-4">
         NamasteNews - {props.category.charAt(0).toUpperCase() + props.category.slice(1)} News
       </h1>
+
       {loading && <Spinner />}
+
+      {/*  Display error message if fetching fails */}
+      {error && <p style={{ color: "red", fontSize: "30px", textAlign: "center", fontWeight: "bold" }}>{error}</p>}
+
       <div className="row">
         {!loading &&
+          !error && //  Only show news if there's no error
           articles.map((element, index) => (
             <div className="col-md-4 my-3" key={element.url || index}>
               <NewsContent
@@ -64,11 +77,16 @@ const News = (props) => {
             </div>
           ))}
       </div>
+
       <div className="container d-flex justify-content-between">
         <button disabled={page <= 1} className="btn btn-dark" onClick={handlePrevious}>
           &larr; Previous
         </button>
-        <button disabled={page >= Math.ceil(totalResults / props.pageSize)} className="btn btn-dark" onClick={handleNext}>
+        <button
+          disabled={page >= Math.ceil((totalResults || 1) / props.pageSize)}
+          className="btn btn-dark"
+          onClick={handleNext}
+        >
           Next &rarr;
         </button>
       </div>
