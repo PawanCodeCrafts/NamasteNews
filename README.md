@@ -1,6 +1,20 @@
 # NamasteNews
 
-<p align="center">A simple and modern news app built with React and NewsAPI.</p>
+<p>A simple and modern news app built with React and NewsAPI.</p>
+<!-- About Section -->
+<h2 id="about">📖 About</h2>
+<p>
+  <strong>Namaste News</strong> is a lightweight and responsive news application built with <strong>React.js</strong>. It fetches real-time news from <strong>NewsAPI</strong> and displays the latest updates in different categories. The app has a clean UI and allows users to browse and search news articles effortlessly.
+</p>
+
+<!-- Features Section -->
+<h2 id="features">✨ Features</h2>
+
+<ul>
+  <li>🔹 Fetches real-time news using NewsAPI</li>
+  <li>🔹 Categorized news (Technology, Sports, Business, Health, etc.)</li>
+  <li>🔹 Fully responsive design using CSS and bootstrap</li>
+</ul>
 
 Screenshots for quick view:-
 <h4> HomePage </h4>
@@ -11,27 +25,6 @@ Screenshots for quick view:-
 <img src="screenshots/img3.png" alt="Home Page Screenshot" width="500">
 <h4>Loading Spinner</h4>
 <img src="screenshots/img4.png" alt="Home Page Screenshot" width="500">
-
-
-
-
-
-<!-- About Section -->
-<h2 id="about">📖 About</h2>
-<p>
-  <strong>Namaste News</strong> is a lightweight and responsive news application built with <strong>React.js</strong>. It fetches real-time news from <strong>NewsAPI</strong> and displays the latest updates in different categories. The app has a clean UI and allows users to browse and search news articles effortlessly.
-</p>
-
-
-
-<!-- Features Section -->
-<h2 id="features">✨ Features</h2>
-
-<ul>
-  <li>🔹 Fetches real-time news using NewsAPI</li>
-  <li>🔹 Categorized news (Technology, Sports, Business, Health, etc.)</li>
-  <li>🔹 Fully responsive design using CSS and bootstrap</li>
-</ul>
 
 
 
