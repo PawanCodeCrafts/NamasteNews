@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import NewsContent from "./NewsContent";
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
@@ -8,11 +8,12 @@ const News = (props) => {
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
-  const [error, setError] = useState(null); //  Added state for error handling
+  const [error, setError] = useState(null);
 
-  const fetchNews = async (page = 1) => {
+  // ✅ fetchNews defined with useCallback
+  const fetchNews = useCallback(async (page = 1) => {
     setLoading(true);
-    setError(null); // Reset error before fetching
+    setError(null);
 
     let url = `https://newsapi.org/v2/top-headlines?q=${props.country}&category=${props.category}&page=${page}&pageSize=${props.pageSize}&apiKey=6f3c126f0c344a27818a9f668ef8b079`;
 
@@ -32,11 +33,12 @@ const News = (props) => {
     }
 
     setLoading(false);
-  };
+  }, [props.country, props.category, props.pageSize]); // dependencies for stable reference
 
+  // ✅ useEffect call
   useEffect(() => {
     fetchNews();
-  }, [props.category]); // Fetch news whenever category changes
+  }, [fetchNews]); // safe now, no ESLint warning
 
   const handlePrevious = () => {
     if (page > 1) {
@@ -58,12 +60,15 @@ const News = (props) => {
 
       {loading && <Spinner />}
 
-      {/*  Display error message if fetching fails */}
-      {error && <p style={{ color: "red", fontSize: "30px", textAlign: "center", fontWeight: "bold" }}>{error}</p>}
+      {error && (
+        <p style={{ color: "red", fontSize: "30px", textAlign: "center", fontWeight: "bold" }}>
+          {error}
+        </p>
+      )}
 
       <div className="row">
         {!loading &&
-          !error && //  Only show news if there's no error
+          !error &&
           articles.map((element, index) => (
             <div className="col-md-4 my-3" key={element.url || index}>
               <NewsContent
