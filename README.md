@@ -2,20 +2,17 @@
 
 <p align="center">A simple and modern news app built with React and NewsAPI.</p>
 
+Screenshots for quick view:-
+<h4> HomePage </h4>
+<img src="screenshots/img2.png" alt="Home Page Screenshot" width="500">
+<h4> Category - entertainment </h4>
+<img src="screenshots/img1.png" alt="Home Page Screenshot" width="500">
+<h4>Pagination</h4>
+<img src="screenshots/img3.png" alt="Home Page Screenshot" width="500">
+<h4>Loading Spinner</h4>
+<img src="screenshots/img4.png" alt="Home Page Screenshot" width="500">
 
-<!-- Table of Contents -->
-<h2>📌 Table of Contents</h2>
 
-<ul>
-  <li><a href="#about">About</a></li>
-  <li><a href="#features">Features</a></li>
-  <li><a href="#tech-stack">Tech Stack</a></li>
-  <li><a href="#installation">Installation</a></li>
-  <li><a href="#usage">Usage</a></li>
-  <li><a href="#contributing">Contributing</a></li>
-  <li><a href="#license">License</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
 
 
 
